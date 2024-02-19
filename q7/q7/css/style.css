@@ -1,1 +1,43 @@
 @charset "UTF-8";
+
+
+.baloon {
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    background-color: #fad296;
+    border: solid 5px #8f5a0a;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+/* 吹き出ししっぽの背景色用　*/
+.baloon:before {
+    content: "";
+    border: solid 20px transparent;
+    border-top: solid 20px #fad296;
+    position: absolute;
+    top: 98%;
+    left: 40px;
+    z-index: 2;
+
+}
+
+/* 吹き出ししっぽの枠線色用　*/
+.baloon:after {
+    content: "";
+    border: solid 20px transparent;
+    border-top: solid 20px #8f5a0a;
+    position: absolute;
+    top: 100%;
+    left: 40px;
+    transform: translateY(5px);
+    z-index: 1;
+
+}
+
+p {
+    margin: 20px;
+    font-size: 16px;
+    line-height: 16px;
+}
