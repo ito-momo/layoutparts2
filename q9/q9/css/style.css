@@ -195,6 +195,7 @@ ul {
   border: 1px solid #000000;
   border-left: 0;
   background-color: #fff;
+  transition: 1s;
 
 }
 
@@ -213,15 +214,5 @@ ul {
 
 .cardlist:hover {
   z-index: 5;
-  animation: hover6 1s forwards;
-}
-
-@keyframes hover6 {
-  from {
-    box-shadow: 0;
-  }
-
-  to {
-    box-shadow: 0px 0px 10px 3px #424242d0;
-  }
+  box-shadow: 0px 0px 10px 3px #424242d0;
 }
